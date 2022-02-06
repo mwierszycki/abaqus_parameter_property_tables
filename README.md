@@ -1,1 +1,1 @@
-# mwierszycki-abaqus_parameter_property_tables
+# Parameter and Property Tables Collections in Abaqus
