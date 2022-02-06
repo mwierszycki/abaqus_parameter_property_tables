@@ -1,0 +1,1 @@
+# mwierszycki-abaqus_parameter_property_tables
