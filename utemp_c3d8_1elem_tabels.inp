@@ -1,0 +1,72 @@
+*Heading
+**
+**
+*Preprint, model=yes, history=yes
+*Node, nset=nall
+      1,          0.1,           0.,           0.
+      2,          0.1,         0.01,           0.
+      3,          0.1,           0.,         0.01
+      4,          0.1,         0.01,         0.01
+      5,         0.09,           0.,           0.
+      6,         0.09,         0.01,           0.
+      7,         0.09,           0.,         0.01
+      8,         0.09,         0.01,         0.01
+*Element, type=c3d8, elset=eall
+ 1,  5,  6,  8,  7,  1,  2,  4,  3
+*Nset, nset=g7, generate
+ 1, 4,   1
+*Nset, nset=g8, generate
+ 1,  4,  1
+*Parameter table type, name=type_1, parameters=3
+integer
+float
+string
+*Property table type, name=type_2, properties=1, independent variables=1
+"description of the first property"
+**
+*Table collection, name=table_1
+*Parameter table, type=type_1, label=label_1
+1, 1.0, "one"
+2, 2.0, "two"
+*Parameter table, type=type_1, label=label_2
+12,12.0,"onetwo"
+**
+*Table collection, name=table_2
+*Property table, type=type_2, label=label_3, temperature
+1.0,10.0,100.0
+2.0,20.0,200.0
+**
+**
+**
+*Solid section,material=elmat, elset=eall
+*Material,name=elmat
+*Conductivity
+55.6
+*Specific heat
+ 460., 
+*Density
+ 7850., 
+*Elastic
+200e9,0.0
+*Initial conditions,type=temperature
+nall,25
+**
+**
+*Elset,elset=test
+eall
+*Nset,nset=test
+nall
+*Step,inc=1000
+*Static
+*Boundary
+g8,encastre
+**
+*Temperature, user
+nall
+**
+*El print, elset=test, freq=1
+temp
+*Output,field,freq=1
+*Element output
+temp
+*End step
