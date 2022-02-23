@@ -800,7 +800,8 @@
       <g class="TextShape">
        <g id="id69">
         <rect class="BoundingBox" stroke="none" fill="none" x="11000" y="2000" width="19751" height="807"/>
-        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="494px" font-weight="400"><tspan class="TextPosition" x="17112" y="2574"><tspan fill="rgb(0,0,0)" stroke="none">Abaqus 2022 (updated </tspan><tspan class="PlaceholderText" fill="rgb(0,0,0)" stroke="none">&lt;date&gt;</tspan><tspan fill="rgb(0,0,0)" stroke="none">)</tspan></tspan></tspan></text>
+        <text class="SVGTextShape"><tspan class="TextParagraph" font-family="Arial, sans-serif" font-size="494px" font-weight="400"><tspan class="TextPosition" x="17112" y="2574"><tspan fill="rgb(0,0,0)" stroke="none">Abaqus 2022 (up
+         d </tspan><tspan class="PlaceholderText" fill="rgb(0,0,0)" stroke="none">2022-02-20</tspan><tspan fill="rgb(0,0,0)" stroke="none">)</tspan></tspan></tspan></text>
        </g>
       </g>
       <g class="com.sun.star.drawing.ConnectorShape">
